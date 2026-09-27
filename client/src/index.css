@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #11161d;
+  --color-ink: #e8eef4;
+  --color-muted: #9aa6b4;
+  --color-line: #2a3340;
+  --color-card: #1a212b;
+  --color-accent: #3dbead;
+  --color-accent-soft: #163832;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(61, 190, 173, 0.12), transparent 32%),
+    var(--color-paper);
+  color: var(--color-ink);
+  font-family: Figtree, sans-serif;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+.font-display {
+  font-family: Newsreader, Georgia, serif;
+}

@@ -1,13 +1,21 @@
 {
   "name": "presight-server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "license": "MIT",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node --experimental-sqlite dist/index.js",
+    "build": "tsc -p tsconfig.json",
+    "seed": "tsx src/db/run-seed.ts"
+  },
   "dependencies": {
     "express": "~5.1.0"
   },
   "devDependencies": {
     "@types/express": "~5.0.1",
-    "@types/node-fetch": "~2.6.12"
+    "@types/node": "~22.15.3",
+    "tsx": "~4.19.3",
+    "typescript": "~5.8.3"
   }
 }

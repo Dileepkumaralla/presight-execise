@@ -12,6 +12,11 @@ node_modules/
 dist/
 build/
 scripts/
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+data/
 
 # misc
 .DS_Store
@@ -28,4 +33,5 @@ yarn-debug.log*
 yarn-error.log*
 
 .parcel-cache
-.idea/
+.idea/node_modules/
+.DS_Store
